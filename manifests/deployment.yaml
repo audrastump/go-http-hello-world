@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: devhubtest
-          image: go-http-hello-world:latest
+          image: testdeploymentsacr.azurecr.io/image-workflow-1744135103449:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
