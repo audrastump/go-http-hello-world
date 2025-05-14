@@ -100,7 +100,7 @@ jobs:
       # Logs into ACR
       - name: Log into ACR
         run: |
-          az acr login ${{ env.AZURE_CONTAINER_REGISTRY }}
+          az acr login -n ${{ env.AZURE_CONTAINER_REGISTRY }}
 
       # Use kubelogin to configure your kubeconfig for Azure auth
       - name: Set up kubelogin for non-interactive login
